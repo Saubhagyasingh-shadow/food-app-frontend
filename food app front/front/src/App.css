@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+/* nav bar sticky */
+.nav-resp{
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+.bodyman{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  /* background-color: rgb(10, 5, 88); */
+  /* background-color: #666A86; */
+  background-color: white;
+  /* font-family: "Times New Roman"; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.til{
+  text-align: center;
+  font-size: 70px;
+}
+.app-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ap{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.apcontent{
+  display: flex;
+ 
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: row;
+  width:100%;
+}
+.carousal-container {
+  width: 100%;
+  /* display: flex; */
+  border-radius: 25px;
+  margin: 20px;
+  border-style: solid;
+  border-color: #333;
+  /* background-image: url(https://img.freepik.com/free-photo/indian-condiments-with-copy-space-view_23-2148723492.jpg?size=626&ext=jp); */
+
+  background-color: #E8DDB5;
+}
+
+.carousal-content{
+  
+  display: flex;
+  margin:20px;
+  overflow-x: auto;
+}
+
+.carousal-slide {
+  margin-right: 20px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.2s; 
+}
+.carousal-slide:hover{
+  transform: scale(1.1); 
+}
+.carousal-slide a {
+  text-decoration: none;
+  color: #333;
+}
+
+.carousal-slide img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  padding:2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousal-slide p {
+  margin-top: 8px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container's height to fill the viewport */
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.previous{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ddd;
+    border-radius: 40px;
+}
+.previous:hover{
+  background-color: #cc6262;
+  color: black;
+}
+.next{
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background-color: #3d3376;
+}
+
+.plancontainer{
+  width:100%;
+  display: flex;
+  
+  flex-direction: row;
+  /* overflow-x: auto; */
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+.card{
+  margin:3%;
+  width:20%;
+  transition: transform 0.2s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  color: #555;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin: 40px;
+  
+}
+
+.gif-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  height:50%;
+  padding-right: 20px;
+}
+
+.login-gif {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-right:40px;
+  width: 80%; /* Adjust this value to control the width of the form */
+  transition: transform 0.2s;
+}
+
+/* ... (other styles) */
+
+
+.login-form:hover{
+  transform: scale(1.1); /* Enlarge the section by 10% on hover */
+
+}
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form-group text{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero CSS */
+.hero-section{
+  background-image: url('https://st3.depositphotos.com/4590583/19409/i/950/depositphotos_194094412-stock-photo-food-lunch-boxes-delivery-food.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-section h1{
+  color: white;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid red; */
+  font-size: 5rem;
+}
+
+.Steps {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-top: 50px;
+  color: white;
+  height: 60vh;
+  margin-top:40px;
+  margin-left: 190px;
+  border-radius: 15px;
+  background-image: url(https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?size=626&ext=jpg);
+  
+  /* Set background properties */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Scale image to cover entire area */
+
+  transition: transform 0.2s;
+}
+.Steps:hover {
+  transform: scale(1.1); /* Enlarge the section by 10% on hover */
+}
+
+
+
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding:30px;
+  border-radius: 30px;
+  background-image: url(https://img.freepik.com/free-photo/top-view-fresh-red-tomatoes-white-surface_179666-35254.jpg?w=996&t=st=1692523780~exp=1692524380~hmac=28424b28e1f61f347ff5042abbea02e64dfb9e934d834a17083ee6c501bc2803);
+  color:rgb(31, 28, 28);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
